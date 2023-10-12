@@ -1,0 +1,24 @@
+.link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.link:hover {
+  color: yellow;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: yellow;
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
