@@ -11,7 +11,7 @@ const Education = () => {
   return (
     <Stack
       bg="#131313"
-      mb={{ base: "60px", lg: "80px" }}
+      mb={{ base: "50px", lg: "70px" }}
       px={{ base: "20px", lg: "60px" }}
       divider={<StackDivider borderColor="gray.200" />}
       direction="column"
@@ -103,6 +103,7 @@ const Education = () => {
           </Text>
         </Box>
       </SimpleGrid>
+      <Box></Box>
     </Stack>
   );
 };
