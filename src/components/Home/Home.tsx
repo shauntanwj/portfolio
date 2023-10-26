@@ -83,7 +83,7 @@ const Home = () => {
             Malaysia with an unwavering passion for software development and
             emerging technologies.
           </Text>
-          <a href="mailto:shauntan0410@gmail.com" target="_blank">
+          <a href="mailto:shauntanwj10@gmail.com" target="_blank">
             <Button
               mt={4}
               borderRadius={20}

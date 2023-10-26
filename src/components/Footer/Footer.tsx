@@ -35,7 +35,7 @@ const Footer = () => {
             direction={{ base: "column", lg: "row" }}
             alignItems={{ base: "start", lg: "center" }}
           >
-            <a href="mailto:shauntan0410@gmail.com" target="_blank">
+            <a href="mailto:shauntanwj10@gmail.com" target="_blank">
               <Text
                 className={styles.link}
                 textColor="#ddd4d4"
