@@ -32,7 +32,7 @@ const Home = () => {
         templateRows={{ sm: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
         gap={{ sm: 1, lg: 4 }}
         px={{ base: "20px", lg: "60px" }}
-        pt={{ base: 100, lg: 120 }}
+        pt={{ base: 20, lg: 120 }}
         pb={{ lg: "70px" }}
         mb={{ lg: 20 }}
         id="home"
