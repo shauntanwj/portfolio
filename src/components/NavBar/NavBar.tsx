@@ -174,7 +174,17 @@ const NavBar = () => {
                   >
                     projects
                   </Link>
-                  <Flex cursor="pointer">contact</Flex>
+                  <Link
+                    activeClass="active"
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={onClose}
+                  >
+                    contact
+                  </Link>
                 </VStack>
               </AbsoluteCenter>
             </DrawerContent>
