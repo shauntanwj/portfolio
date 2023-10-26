@@ -1,14 +1,22 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
-  initialColorMode: "dark",
+  initialColorMode: "light",
 };
 
 const theme = extendTheme({
   config,
   fonts: {
-    heading: `'Oswald', sans-serif`,
+    heading: `'HelveticaNeue Black', sans-serif`,
     body: `'Oswald', sans-serif`,
+  },
+  styles: {
+    global: {
+      // styles for the `body`
+      body: {
+        bg: "#131313",
+      },
+    },
   },
 });
 

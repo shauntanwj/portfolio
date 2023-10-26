@@ -1,21 +1,21 @@
 .link {
   display: inline-block;
-  color: white;
+  color: #ddd4d4;
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
 }
 
 .link:hover {
-  color: yellow;
+  color: #ddd4d4;
 }
 
 .link::after {
   content: "";
   display: block;
   width: 0px;
-  height: 2px;
-  background: yellow;
+  height: 1px;
+  background: #ddd4d4;
   transition: width 0.3s;
 }
 

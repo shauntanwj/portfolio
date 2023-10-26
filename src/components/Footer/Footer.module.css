@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none !important;
+}
+
+.link:hover {
+  color: gray;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}

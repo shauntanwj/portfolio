@@ -1,0 +1,16 @@
+.img {
+  transition: 0.2s ease; /* Animation */
+}
+
+.img:hover {
+  transform: scale(1.02);
+  filter: saturate(50%);
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.link:hover {
+  color: gray;
+}

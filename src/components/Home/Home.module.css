@@ -1,0 +1,11 @@
+.button {
+  color: #ddd4d4;
+}
+
+.button:hover {
+  color: #131313;
+}
+
+.text {
+  color: #ddd4d4;
+}
