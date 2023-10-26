@@ -35,6 +35,7 @@ const Home = () => {
         pt={{ base: 100, lg: 120 }}
         pb={{ lg: "70px" }}
         mb={{ lg: 20 }}
+        id="home"
       >
         <GridItem
           area="name"

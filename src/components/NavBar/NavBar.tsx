@@ -49,7 +49,20 @@ const NavBar = () => {
           as="header"
         >
           <HStack w="100%" justifyContent="space-between">
-            <Image src={logo} boxSize={navBarSize ? "40px" : "80px"} />
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <Image
+                src={logo}
+                boxSize={navBarSize ? "40px" : "80px"}
+                cursor="pointer"
+              />
+            </Link>
             <Spacer />
             <Link
               activeClass="active"
@@ -111,7 +124,16 @@ const NavBar = () => {
           zIndex={200}
           as="header"
         >
-          <Image src={logo} boxSize="50px" />
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <Image src={logo} boxSize={"50px"} cursor="pointer" />
+          </Link>
           <Spacer />
 
           <Button
@@ -132,7 +154,17 @@ const NavBar = () => {
                 py="10px"
                 justifyContent="space-between"
               >
-                <Image src={logo} boxSize="50px" />
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={onClose}
+                >
+                  <Image src={logo} boxSize={"50px"} cursor="pointer" />
+                </Link>
                 <Spacer />
                 {/* <DrawerCloseButton /> */}
                 <Button variant="text" onClick={onClose} fontWeight={"thin"}>
