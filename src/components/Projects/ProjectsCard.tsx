@@ -13,30 +13,42 @@ import {
 } from "@chakra-ui/react";
 import whosYourYb from "../../assets/whos_ur_yb.png";
 import tsunamiDetection from "../../assets/tsunami_detection.png";
-import dinosaur from "../../assets/dinosaur.jpg";
 import styles from "./Projects.module.css";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
+import fireVideo from "../../assets/fire.mp4";
+import dinosaurVid from "../../assets/dinosaur.mp4";
+import scraper from "../../assets/scraper.png";
 
 interface Props {
   project: Project;
 }
 
 const ProjectsCard = ({ project }: Props) => {
-  const imageMap: { [key: string]: string } = {
+  const assetMap: { [key: string]: string } = {
     whosYourYb: whosYourYb,
     tsunamiDetection: tsunamiDetection,
-    dinosaur: dinosaur,
+    dinosaur: dinosaurVid,
+    fire: fireVideo,
+    scraper: scraper,
   };
   return (
     <Card borderRadius={0} background="none" overflow="hidden" cursor="pointer">
       <CardBody>
         <AspectRatio ratio={16 / 9}>
-          <Image
-            src={imageMap[project.image_name]}
-            className={styles.img}
-            filter="saturate(5%) brightness(75%)"
-            objectFit="cover"
-          />
+          {project.asset_type === "img" ? (
+            <Image
+              src={assetMap[project.asset_name]}
+              className={styles.asset}
+              objectFit="cover"
+            />
+          ) : (
+            <video
+              className={styles.asset}
+              src={assetMap[project.asset_name]}
+              autoPlay
+              loop
+            ></video>
+          )}
         </AspectRatio>
         <Stack>
           <Text

@@ -1,8 +1,9 @@
-.img {
+.asset {
   transition: 0.2s ease; /* Animation */
+  filter: saturate(5%) brightness(75%);
 }
 
-.img:hover {
+.asset:hover {
   transform: scale(1.02);
   filter: saturate(50%);
 }
