@@ -6,13 +6,13 @@ const About = () => {
       <Container
         maxWidth="100%"
         id="about"
-        px={{ base: "20px", lg: "60px" }}
+        px={{ base: "20px", md: "30px", lg: "45px", xl: "60px" }}
         mb={10}
       >
         <Flex>
           <VStack w="full" spacing={10} alignItems="center">
             <Text
-              fontSize={{ base: "20px", lg: "40px" }}
+              fontSize={{ base: "20px", md: "30px", lg: "40px" }}
               fontWeight="semibold"
               color="#ddd4d4"
             >
@@ -41,7 +41,7 @@ const About = () => {
             </Text>
 
             <Text
-              fontSize={{ base: "20px", lg: "40px" }}
+              fontSize={{ base: "20px", md: "30px", lg: "40px" }}
               fontWeight="semibold"
               color="#ddd4d4"
             >
@@ -62,7 +62,7 @@ const About = () => {
             </Text>
 
             <Text
-              fontSize={{ base: "20px", lg: "40px" }}
+              fontSize={{ base: "20px", md: "30px", lg: "40px" }}
               fontWeight="semibold"
               color="#ddd4d4"
             >
