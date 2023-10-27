@@ -48,6 +48,7 @@ const ProjectsCard = ({ project }: Props) => {
               loop
               autoPlay
               muted
+              playsInline
             ></video>
           )}
         </AspectRatio>
