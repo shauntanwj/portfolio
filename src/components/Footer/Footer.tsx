@@ -8,6 +8,7 @@ import {
   Link,
   Show,
   Stack,
+  Hide,
 } from "@chakra-ui/react";
 import { BiSolidCircle } from "react-icons/bi";
 import styles from "./Footer.module.css";
@@ -50,16 +51,16 @@ const Footer = () => {
                 shauntanwj10@gmail.com
               </Text>
             </a>
-            <Show above="lg">
+            <Hide below="sm">
               <Icon as={BiSolidCircle} color="gray.400" boxSize={1.5} />
-            </Show>
+            </Hide>
             <Text textColor="#ddd4d4" fontSize={{ lg: "20px" }}>
               60149681255
             </Text>
           </Stack>
-          <Show above="lg">
+          <Hide below="sm">
             <Spacer />
-          </Show>
+          </Hide>
           <HStack>
             <Link
               className={styles.link}
