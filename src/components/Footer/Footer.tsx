@@ -6,7 +6,6 @@ import {
   Icon,
   Spacer,
   Link,
-  Show,
   Stack,
   Hide,
 } from "@chakra-ui/react";
