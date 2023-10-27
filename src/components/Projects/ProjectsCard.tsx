@@ -11,10 +11,10 @@ import {
   HStack,
   Icon,
 } from "@chakra-ui/react";
+import { HiMiniArrowUpRight } from "react-icons/hi2";
+import styles from "./Projects.module.css";
 import whosYourYb from "../../assets/whos_ur_yb.png";
 import tsunamiDetection from "../../assets/tsunami_detection.png";
-import styles from "./Projects.module.css";
-import { HiMiniArrowUpRight } from "react-icons/hi2";
 import fireVideo from "../../assets/fire.mp4";
 import dinosaurVid from "../../assets/dinosaur.mp4";
 import scraper from "../../assets/scraper.png";
@@ -43,10 +43,11 @@ const ProjectsCard = ({ project }: Props) => {
             />
           ) : (
             <video
-              className={styles.asset}
               src={assetMap[project.asset_name]}
-              autoPlay
+              className={styles.asset}
               loop
+              autoPlay
+              muted
             ></video>
           )}
         </AspectRatio>
