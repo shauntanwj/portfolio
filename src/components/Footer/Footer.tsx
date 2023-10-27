@@ -16,7 +16,12 @@ import resume from "../../../public/Shaun Tan Wei Jie.pdf";
 const Footer = () => {
   return (
     <>
-      <Box as="footer" id="footer" px={{ base: "20px", lg: "60px" }} pb="30px">
+      <Box
+        as="footer"
+        id="footer"
+        px={{ base: "20px", md: "30px", lg: "45px", xl: "60px" }}
+        pb="30px"
+      >
         <Box w="100%" my={2}>
           <Heading
             color="#ddd4d4"
@@ -29,11 +34,11 @@ const Footer = () => {
         <Stack
           w="100%"
           justifyContent="space-between"
-          direction={{ base: "column", lg: "row" }}
+          direction={{ base: "column", md: "row" }}
         >
           <Stack
-            direction={{ base: "column", lg: "row" }}
-            alignItems={{ base: "start", lg: "center" }}
+            direction={{ base: "column", md: "row" }}
+            alignItems={{ base: "start", md: "center" }}
           >
             <a href="mailto:shauntanwj10@gmail.com" target="_blank">
               <Text

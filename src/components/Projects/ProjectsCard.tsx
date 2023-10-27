@@ -40,19 +40,19 @@ const ProjectsCard = ({ project }: Props) => {
         </AspectRatio>
         <Stack>
           <Text
-            fontSize={{ base: "12px", lg: "17px" }}
+            fontSize={{ base: "12px", md: "17px" }}
             color="#ddd4d4"
             marginTop={2}
           >
             {project.year} / {project.category} / {project.category_detail}
           </Text>
-          <Heading fontSize={{ base: "17px", lg: "25px" }} color="#ddd4d4">
+          <Heading fontSize={{ base: "17px", md: "25px" }} color="#ddd4d4">
             {project.project_name}
           </Heading>
           <HStack spacing={1}>
             <Link
               className={styles.link}
-              fontSize={{ base: "10px", lg: "15px" }}
+              fontSize={{ base: "10px", md: "15px" }}
               href="https://www.linkedin.com/in/shauntan0410"
               isExternal={true}
               color="white"

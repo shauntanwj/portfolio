@@ -12,7 +12,7 @@ const Education = () => {
     <Stack
       bg="#131313"
       mb={{ base: "50px", lg: "70px" }}
-      px={{ base: "20px", lg: "60px" }}
+      px={{ base: "20px", md: "30px", lg: "45px", xl: "60px" }}
       divider={<StackDivider borderColor="gray.200" />}
       direction="column"
       spacing={5}
@@ -20,7 +20,7 @@ const Education = () => {
       <Heading
         pt={10}
         textColor="#ddd4d4"
-        fontSize={{ base: "22px", lg: "40px" }}
+        fontSize={{ base: "22px", md: "30px", lg: "40px" }}
       >
         Education
       </Heading>
@@ -32,7 +32,7 @@ const Education = () => {
       >
         <Box>
           <Text
-            fontSize={{ base: "15px", lg: "25px" }}
+            fontSize={{ base: "15px", md: "20px", lg: "25px" }}
             fontWeight="thin"
             color="#ddd4d4"
           >
@@ -42,7 +42,7 @@ const Education = () => {
 
         <Box>
           <Text
-            fontSize={{ base: "20px", lg: "35px" }}
+            fontSize={{ base: "20px", md: "25px", lg: "35px" }}
             fontWeight="semibold"
             color="#ddd4d4"
           >
@@ -57,7 +57,7 @@ const Education = () => {
       <SimpleGrid columns={{ sm: 1, md: 2 }} alignItems="baseline" width="100%">
         <Box>
           <Text
-            fontSize={{ base: "15px", lg: "25px" }}
+            fontSize={{ base: "15px", md: "20px", lg: "25px" }}
             fontWeight="thin"
             color="#ddd4d4"
           >
@@ -67,7 +67,7 @@ const Education = () => {
 
         <Box>
           <Text
-            fontSize={{ base: "20px", lg: "35px" }}
+            fontSize={{ base: "20px", md: "25px", lg: "35px" }}
             fontWeight="semibold"
             color="#ddd4d4"
           >
@@ -83,7 +83,7 @@ const Education = () => {
         {" "}
         <Box>
           <Text
-            fontSize={{ base: "15px", lg: "25px" }}
+            fontSize={{ base: "15px", md: "20px", lg: "25px" }}
             fontWeight="thin"
             color="#ddd4d4"
           >
@@ -92,7 +92,7 @@ const Education = () => {
         </Box>
         <Box>
           <Text
-            fontSize={{ base: "20px", lg: "35px" }}
+            fontSize={{ base: "20px", md: "25px", lg: "35px" }}
             fontWeight="semibold"
             color="#ddd4d4"
           >

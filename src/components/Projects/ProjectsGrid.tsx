@@ -10,13 +10,16 @@ const Projects = ({ projects }: Props) => {
   return (
     <>
       <Stack
-        px={{ base: "20px", lg: "60px" }}
+        px={{ base: "20px", md: "30px", lg: "45px", xl: "60px" }}
         spacing={5}
         divider={<StackDivider borderColor="gray.200" />}
         id="projects"
         mb={{ base: 5, lg: 10 }}
       >
-        <Heading textColor="#ddd4d4" fontSize={{ base: "22px", lg: "40px" }}>
+        <Heading
+          textColor="#ddd4d4"
+          fontSize={{ base: "22px", md: "30px", lg: "40px" }}
+        >
           Past Projects
         </Heading>
         <SimpleGrid
