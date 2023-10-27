@@ -1,4 +1,4 @@
-import { Text, Heading, Grid, GridItem, Button, Show } from "@chakra-ui/react";
+import { Text, Heading, Grid, GridItem, Button } from "@chakra-ui/react";
 import styles from "./Home.module.css";
 
 const Home = () => {
