@@ -43,8 +43,11 @@ const NavBar = () => {
           background="transparent"
           backdropFilter="saturate(180%) blur(5px)"
           w="100%"
-          py={navBarSize ? "15px" : "20px"}
-          px="60px"
+          py={{
+            md: navBarSize ? "10px" : "15px",
+            lg: navBarSize ? "15px" : "20px",
+          }}
+          px={{ md: "30px", lg: "45px", xl: "60px" }}
           zIndex={200}
           as="header"
         >
@@ -59,7 +62,11 @@ const NavBar = () => {
             >
               <Image
                 src={logo}
-                boxSize={navBarSize ? "40px" : "80px"}
+                boxSize={{
+                  md: "30px",
+                  lg: navBarSize ? "30px" : "70px",
+                  xl: navBarSize ? "40px" : "80px",
+                }}
                 cursor="pointer"
               />
             </Link>

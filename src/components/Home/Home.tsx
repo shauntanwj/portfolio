@@ -25,48 +25,50 @@ const Home = () => {
       <Grid
         templateAreas={{
           base: `"date" "name" "description"`,
-          lg: `"name date" "name space" "name description"`,
+          md: `"name date" "name space" "name description"`,
         }}
-        templateColumns={{ sm: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+        templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         h="100vh"
-        templateRows={{ sm: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+        templateRows={{ sm: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
         gap={{ sm: 1, lg: 4 }}
-        px={{ base: "20px", lg: "60px" }}
-        pt={{ base: 20, lg: 120 }}
-        pb={{ lg: "70px" }}
-        mb={{ lg: 20 }}
+        px={{ base: "20px", md: "30px", lg: "45px", xl: "60px" }}
+        pt={{ base: "80px", md: "90px", lg: "100px", xl: "120px" }}
+        pb={{ md: "30px", lg: "70px" }}
+        mb={{ md: "40px", lg: "60px", xl: "80px" }}
         id="home"
       >
         <GridItem
           area="name"
-          rowSpan={{ sm: 1, lg: 3 }}
+          rowSpan={{ sm: 1, md: 3 }}
           colSpan={1}
           textAlign="left"
         >
           <Heading
-            fontSize={{ base: "70px", md: "36px", lg: "150px" }}
+            fontSize={{ base: "70px", md: "90px", lg: "100px", xl: "150px" }}
             lineHeight={1.02}
           >
             <Text className={styles.text}>SHAUN</Text>
             <Text className={styles.text}>TAN</Text>
           </Heading>
-          <Text fontSize={{ lg: "30px" }} className={styles.text}>
+          <Text
+            fontSize={{ md: "15px", lg: "20px", xl: "30px" }}
+            className={styles.text}
+          >
             SOFTWARE DEVELOPER
           </Text>
         </GridItem>
         <GridItem area="date" rowSpan={1}>
           <Text
-            fontSize={{ lg: "30px" }}
+            fontSize={{ md: "20px", xl: "30px" }}
             fontWeight="thin"
             pt={2}
             className={styles.text}
           >
             {date} {month} {year} <br /> {}
-          </Text>{" "}
+          </Text>
         </GridItem>
-        <Show above="lg">
-          <GridItem area="space" rowSpan={1} />
-        </Show>
+
+        <GridItem area="space" rowSpan={1} />
 
         <GridItem
           area="description"
@@ -74,7 +76,7 @@ const Home = () => {
           textAlign="right"
         >
           <Text
-            fontSize={{ sm: "15px", lg: "30px" }}
+            fontSize={{ sm: "15px", md: "17px", lg: "22px", xl: "30px" }}
             fontWeight="regular"
             className={styles.text}
             color="white"
