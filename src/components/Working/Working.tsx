@@ -16,7 +16,7 @@ import {
   Icon,
   Tag,
 } from "@chakra-ui/react";
-import companyLogo from "../../assets/softskills_1.png";
+import companyLogo from "../../assets/images/softskills_1.png";
 
 import { BiSolidCircle } from "react-icons/bi";
 
