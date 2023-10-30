@@ -172,7 +172,8 @@ const Working = () => {
               <Box
                 display="flex"
                 height={{ base: "70px", md: "80px" }}
-                border="solid white"
+                borderY="solid white"
+                borderLeft="solid white"
                 alignItems="center"
                 px={{ base: 3, md: 7 }}
               >
