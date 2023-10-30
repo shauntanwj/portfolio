@@ -13,11 +13,11 @@ import {
 } from "@chakra-ui/react";
 import { HiMiniArrowUpRight } from "react-icons/hi2";
 import styles from "./Projects.module.css";
-import whosYourYb from "../../assets/whos_ur_yb.png";
-import tsunamiDetection from "../../assets/tsunami_detection.png";
-import fireVideo from "../../assets/fire.mp4";
-import dinosaurVid from "../../assets/dinosaur.mp4";
-import scraper from "../../assets/scraper.png";
+import whosYourYb from "../../assets/images/whos_ur_yb.png";
+import tsunamiDetection from "../../assets/images/tsunami_detection.png";
+import fireVideo from "../../assets/videos/fire.mp4";
+import dinosaurVid from "../../assets/videos/dinosaur.mp4";
+import scraper from "../../assets/images/scraper.png";
 
 interface Props {
   project: Project;

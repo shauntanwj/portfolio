@@ -13,7 +13,7 @@ import {
   AbsoluteCenter,
   VStack,
 } from "@chakra-ui/react";
-import logo from "../../assets/logo_1.png";
+import logo from "../../assets/images/logo_1.png";
 import { Link } from "react-scroll";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
