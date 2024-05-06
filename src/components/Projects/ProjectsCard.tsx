@@ -32,9 +32,15 @@ const ProjectsCard = ({ project }: Props) => {
     scraper: scraper,
   };
   return (
-    <Card borderRadius={0} background="none" overflow="hidden" cursor="pointer">
-      <CardBody>
-        <Link href={project.href} isExternal={true}>
+    <Card
+      className={styles.card}
+      background="none"
+      borderRadius={10}
+      overflow="hidden"
+      cursor="pointer"
+    >
+      <Link className={styles.link} href={project.href} isExternal={true}>
+        <CardBody>
           <AspectRatio ratio={16 / 9}>
             {project.asset_type === "img" ? (
               <Image
@@ -53,37 +59,37 @@ const ProjectsCard = ({ project }: Props) => {
               ></video>
             )}
           </AspectRatio>
-        </Link>
-        <Stack>
-          <Text
-            fontSize={{ base: "12px", md: "17px" }}
-            color="#ddd4d4"
-            marginTop={2}
-          >
-            {project.year} / {project.category} / {project.category_detail}
-          </Text>
-          <Heading fontSize={{ base: "17px", md: "25px" }} color="#ddd4d4">
-            {project.project_name}
-          </Heading>
-          <HStack spacing={1}>
-            <Link
-              className={styles.link}
-              fontSize={{ base: "10px", md: "15px" }}
-              href={project.href}
-              isExternal={true}
-              color="white"
-              fontWeight="thin"
+          <Stack>
+            <Text
+              fontSize={{ base: "12px", md: "17px" }}
+              color="#ddd4d4"
+              marginTop={2}
             >
-              See project
-            </Link>
-            <Icon
-              as={HiMiniArrowUpRight}
-              color="white"
-              boxSize={{ base: 3, lg: 5 }}
-            />
-          </HStack>
-        </Stack>
-      </CardBody>
+              {project.year} / {project.category} / {project.category_detail}
+            </Text>
+            <Heading fontSize={{ base: "17px", md: "25px" }} color="#ddd4d4">
+              {project.project_name}
+            </Heading>
+            <HStack spacing={1}>
+              <Link
+                className={styles.link}
+                fontSize={{ base: "10px", md: "15px" }}
+                href={project.href}
+                isExternal={true}
+                color="white"
+                fontWeight="thin"
+              >
+                See project
+              </Link>
+              <Icon
+                as={HiMiniArrowUpRight}
+                color="white"
+                boxSize={{ base: 3, lg: 5 }}
+              />
+            </HStack>
+          </Stack>
+        </CardBody>
+      </Link>
     </Card>
   );
 };
