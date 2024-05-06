@@ -6,6 +6,7 @@ export interface Project {
   year: number;
   category: string;
   category_detail?: string;
+  href: string;
 }
 
 export const ProjectData = [
@@ -17,6 +18,7 @@ export const ProjectData = [
     year: 2023,
     category: "Personal",
     category_detail: "Web Scrapping",
+    href: "https://github.com/shauntanwj/client-scraper",
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ export const ProjectData = [
     year: 2022,
     category: "Final Year Project",
     category_detail: "User Generated Content",
+    href: "https://github.com/Monash-FYP-MA02",
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ export const ProjectData = [
     year: 2022,
     category: "Academic",
     category_detail: "Big Data Management",
+    href: "https://github.com/shauntanwj/realtime-data-streaming-simulation",
   },
   {
     id: 4,
@@ -46,6 +50,7 @@ export const ProjectData = [
     year: 2021,
     category: "Academic",
     category_detail: "Parallel Computing",
+    href: "https://github.com/shauntanwj/tsunami-detections-simulation",
   },
   {
     id: 5,
@@ -55,5 +60,6 @@ export const ProjectData = [
     year: 2021,
     category: "Academic",
     category_detail: "Object Oriented Programming (OOP)",
+    href: "https://github.com/shauntanwj/dinosaur-game-oop",
   },
 ];

@@ -34,24 +34,26 @@ const ProjectsCard = ({ project }: Props) => {
   return (
     <Card borderRadius={0} background="none" overflow="hidden" cursor="pointer">
       <CardBody>
-        <AspectRatio ratio={16 / 9}>
-          {project.asset_type === "img" ? (
-            <Image
-              src={assetMap[project.asset_name]}
-              className={styles.asset}
-              objectFit="cover"
-            />
-          ) : (
-            <video
-              src={assetMap[project.asset_name]}
-              className={styles.asset}
-              loop
-              autoPlay
-              muted
-              playsInline
-            ></video>
-          )}
-        </AspectRatio>
+        <Link href={project.href} isExternal={true}>
+          <AspectRatio ratio={16 / 9}>
+            {project.asset_type === "img" ? (
+              <Image
+                src={assetMap[project.asset_name]}
+                className={styles.asset}
+                objectFit="cover"
+              />
+            ) : (
+              <video
+                src={assetMap[project.asset_name]}
+                className={styles.asset}
+                loop
+                autoPlay
+                muted
+                playsInline
+              ></video>
+            )}
+          </AspectRatio>
+        </Link>
         <Stack>
           <Text
             fontSize={{ base: "12px", md: "17px" }}
@@ -67,7 +69,7 @@ const ProjectsCard = ({ project }: Props) => {
             <Link
               className={styles.link}
               fontSize={{ base: "10px", md: "15px" }}
-              href="https://www.linkedin.com/in/shauntan0410"
+              href={project.href}
               isExternal={true}
               color="white"
               fontWeight="thin"
